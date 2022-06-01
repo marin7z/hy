@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titlet</title>
+</head>
+<body bgcolor="#FFFFE5">
+    <div class="mojdiv">
+   <a href="#pocetna-site">Početna</a>
+   <a href="#Poznati matematicari">Poznati matematičari</a>
+    <a href="#O-Nama">O nama</a>
+    
+</div>
+    <center><h2>Zbroji dva  broja</h2></center>
+    
+     {% block content %}
+
+     {% endblock content %}
+     <form action="add" method='post'>
+         {% csrf_token %}
+         enter 1st number: <input type= "text" name="num1"></br>
+         enter 2nd number: <input type= "text" name="num2"></br>
+         <input type="submit">
+
+       <center><h2 id="pocetna-site">Što je to račun?</h2></center>
+       
+
+<center><p>Račun (tal. razione) znači računanje, radnju s brojevima radi iznalaženja rezultata sabiranjem, oduzimanjem, množenjem ili deljenjem. Nauka o računanju se naziva aritmetika.
+
+    Postoje i druga značenja reči račun, koja ovde samo spominjemo radi potpunosti: (u prodavnici) obračun za kupljenu ili prodatu stvar; (u banci) obračun dugovanja; korist; mišljenje, shvatanje (zamisao, namera). Reč račun se upotrebljava u izrazima: praviti račun bez krčmara - raditi nepromišljeno; čist račun duga ljubav - poštenim odnosima čuva se prijateljstvo.</p></center>
+                                       
+   <a href="https://www.matematika.ba/slavni-matematicari/10-poznati-matematiari.html?start=12">Poznati matematičari</a>
+   <center><h3 id="Poznati matematicari">POznati matematičari</h3></center>
+    <center><li>Pitagora</li></center>
+    <center><li>Arhimed</li></center>
+   <center> <li>Herodot</li></center>
+     
+    <center><h2>Arhimed</h2></center>
+
+   <center><p> Arhimed iz Sirakuze, navodno jedan od trojice najgenijalnijih matematičara svih vremena, bio je vrhunac helenske matematike i najveći fizičar starog vijeka. Rođen je 287. godine prije nove ere. Njegov je otac bio Fidija, astronom i matematičar, jedan od onih profesionalaca koji su bili bliži astrologiji nego matematici dok ga filozofija uopće nije zanimala. U vrijeme Arhimedova rođenja Fidija je bio relativno siromašan građanin, kakvih je u Sirakuzi bilo mnogo. Međutim njegovo siromaštvo nije bilo dugog vijeka jer je uskoro njihov rođak Hijeron zavladao gradom. Fidija je svog sina naučio svemu što je sam znao.</p></center>
+    
+    <center><h3>Pitagora</h3></center>
+
+   
+    
+    <center><p>Pitagora iz Samosa se često opisuje kao prvi pravi matematičar i premda znamo relativno malo o njegovim matematičkim postignućima smatra se za veoma važnu ličnost u istoriji razvoja matematike. Za razliku od mnogih kasnijih grčkih matematičara, za koje imamo neke od knjiga koje su napisali, od pitagorinih tekstova danas nemamo ništa sacuvano. Društvo koje je osnovao i vodio bilo je naucnog ali i religioznog karaktera, rad im je bio obavijen velom tajanstvenosti što nam govori da je i sam Pitagora bio misteriozna licnost. Detalje o Pitagorinom životu imamo iz radova ranih biografa, oni su koristili originalne izvore pisane od autora koji su pitagori pripisivali božanske moci.</p></center>
+ 
+
+
+
+    <center><h3 id="O-Nama">O nama</h3></center>
+    <center><p>Mi smo stranica i ljudi koji se bave istraživanjem poznatih matematičara i donosimo njihova djela.<br> Naši najdraži matematičari su:
+        Arhimed i Pitagora. Oni su bili dobri matematičari
+    </p></center>
+    
+    
+</body>
+<style>
+    .body{
+       background-color: rgb(247, 238, 238);
+       
+     }
+
+     p{
+        
+         color: blue;
+          
+     }
+
+     h2, h3{
+         background-color: #f7a420;
+         border: 10px;
+            
+     }
+     a{
+         color:rgb(255, 255, 255);
+         text-decoration: none;
+         font-size: 100;
+         
+     }
+     .mojdiv{
+        border: 25px outset red;
+        background-color:black;
+        text-align: right;
+        font-size: large;
+        margin-right: auto;
+        
+       
+        
+
+     }
+
+
+</style>
+</html>
